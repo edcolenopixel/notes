@@ -464,11 +464,6 @@ function copypasta(item) {
 	copyText.value = item
 	console.log(copyText.value);
  	navigator.clipboard.writeText(item);
-	$(".copyAlert").show();
-	setTimeout(function(){
-	$(".copyAlert").hide(); 
-	}, 2000);
-	
 }
 
 
