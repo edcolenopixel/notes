@@ -439,8 +439,9 @@ function toggleCombos() {
 				tr = `</tr><tr>`;
 				count = 0;
 			}
-			buffer += `<td><input type="checkbox" id="${item}-SELECTED" name="${item}-SELECTED" value="${item}-SELECTED" ${checked}/>` +
-				`<label for="${item}-SELECTED">${Menu[item].emoji} ${item}</label></td>${tr}`;
+			buffer += `<td><button id="${item}-SELECTED}" name="${item}-SELECTED" value="${item}-SELECTED" onclick=copypasta(` + Menu[item].copypasta + `)>` + ${item} + `</button></td>${tr}`;
+//			buffer += `<td><input type="checkbox" id="${item}-SELECTED" name="${item}-SELECTED" value="${item}-SELECTED" ${checked}/>` +
+//				`<label for="${item}-SELECTED">${Menu[item].emoji} ${item}</label></td>${tr}`;
 		});
 		for (let i = count; i < Settings.COMBO_TABLE_WIDTH; i++) {
 			buffer += `<td></td>`;
@@ -453,6 +454,12 @@ function toggleCombos() {
 	} else {
 		document.getElementById('table').innerText = '';
 	}
+}
+
+function copypasta(item) {
+	console.log(item);
+ 	navigator.clipboard.writeText(item);
+ 	alert("Copied the text: " + item);
 }
 
 function getIcon(item) {
