@@ -462,7 +462,7 @@ function copypasta(item) {
 	copyText.value = item
 	console.log(copyText.value);
  	navigator.clipboard.writeText(item);
-	alert(`Copied!`);
+	//alert(`Copied!`);
 }
 
 
