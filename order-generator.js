@@ -459,7 +459,9 @@ function toggleCombos() {
 
 
 function copypasta(item) {
-	console.log(item);
+	var copyText = document.getElementById("copypasta");
+	copyText.value = item
+	console.log(copyText.value);
  	navigator.clipboard.writeText(item);
  	alert("Copied the text: " + item);
 }
