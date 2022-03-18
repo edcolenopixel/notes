@@ -64,7 +64,7 @@ const Menu = {
 		price: 200,
 		emoji: '🧀',
 		items: ["Mozz sticks","Mozz sticks","Mozz sticks","Mozz sticks"],
-		copypasta:  '~y~ ~h~ 🧀Stretchy De-stress🧠 ~n~~b~ 4 Mozzarella Sticks ~w~|~g~ $200',
+		copypasta:  '~y~ ~h~ 🧀Stretchy De-stress🧠 ~n~~b~ 4 Mozzarella Sticks ~w~|~g~ $200 ~r~LIMITED',
 	},
 	"Sweet Tooth": {
 		price: 162,
@@ -82,7 +82,7 @@ const Menu = {
 		price: 150,
 		emoji: '☀️',
 		items: ["Oatmeal", "Bacon", "Milkshake"],
-		copypasta:  '💨🍬Sugar Rush Combo💨🍬~n~~b~1 Soda, 1 Cream Pie, 1 Rimjob ~w~|~g~ $123',
+		copypasta:  '~g~~h~ 🌄 Morning Glory Combo 🌄~n~~b~1 Oatmeal, 1 Bacon, 1 OJ ~w~|~g~ $150 ~r~LIMITED',
 	},
 	// Burger Meals:
 	"Burger Meals:": {
@@ -439,9 +439,8 @@ function toggleCombos() {
 				tr = `</tr><tr>`;
 				count = 0;
 			}
-//			console.log( `<td><button id="${item}-SELECTED" name="${item}-SELECTED" onclick=copypasta(\"` + Menu[item].copypasta + `\")>` + ${item} + `</button></td>${tr}`);
-			buffer += `<td><input type="checkbox" id="${item}-SELECTED" name="${item}-SELECTED" onclick="copypasta('`+ Menu[item].copypasta+ `')" value="${item}-SELECTED" ${checked}/>` +
-				`<label for="${item}-SELECTED">${Menu[item].emoji} ${item}</label></td>${tr}`;
+			buffer += `<td><button type="checkbox" id="${item}-SELECTED" name="${item}-SELECTED" onclick="copypasta('`+ Menu[item].copypasta+ `')" value="${item}-SELECTED"/>` +
+				`${Menu[item].emoji} ${item}</button></td>${tr}`;
 				
 		});
 		for (let i = count; i < Settings.COMBO_TABLE_WIDTH; i++) {
