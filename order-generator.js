@@ -454,6 +454,11 @@ function toggleCombos() {
 	} else {
 		document.getElementById('table').innerText = '';
 	}
+	
+	$(".copyAlert").show();
+	setTimeout(function(){
+	$(".copyAlert").hide(); 
+	}, 2000);
 }
 
 
@@ -588,11 +593,4 @@ function loadPage() {
 
 	let checkboxes = document.querySelectorAll('input[type="checkbox"], input[type="radio"]');
 	checkboxes.forEach(i => i.addEventListener('click', report, false));
-}
-
-function myAlertTop(){
-  $(".copyAlert").show();
-  setTimeout(function(){
-    $(".copyAlert").hide(); 
-  }, 2000);
 }
