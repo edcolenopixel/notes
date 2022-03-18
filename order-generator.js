@@ -454,8 +454,6 @@ function toggleCombos() {
 	} else {
 		document.getElementById('table').innerText = '';
 	}
-	
-
 }
 
 
