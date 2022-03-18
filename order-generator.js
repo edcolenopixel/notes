@@ -439,8 +439,8 @@ function toggleCombos() {
 				tr = `</tr><tr>`;
 				count = 0;
 			}
-			buffer += `<td><button class="btn" type="checkbox" id="${item}-SELECTED" name="${item}-SELECTED" onclick="copypasta('`+ Menu[item].copypasta+ `')" value="${item}-SELECTED"/>` +
-				`${Menu[item].emoji} ${item}</button></td>${tr}`;
+			buffer += `<td><center><button class="btn" type="checkbox" id="${item}-SELECTED" name="${item}-SELECTED" onclick="copypasta('`+ Menu[item].copypasta+ `')" value="${item}-SELECTED"/>` +
+				`${Menu[item].emoji} ${item}</button></center></td>${tr}`;
 				
 		});
 		for (let i = count; i < Settings.COMBO_TABLE_WIDTH; i++) {
