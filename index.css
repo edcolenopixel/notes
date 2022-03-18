@@ -314,12 +314,3 @@ body.dark-theme a {
 body.dark-theme td {
   border: 1px solid white;
 }
-.copyAlert{
-    position: fixed;
-    top: 5px; 
-    left:2%;
-    width: 96%;
-}
-.alert{
-    display: none;
-}
