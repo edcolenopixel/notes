@@ -439,7 +439,7 @@ function toggleCombos() {
 				tr = `</tr><tr>`;
 				count = 0;
 			}
-			buffer += `<td><button id="${item}-SELECTED" name="${item}-SELECTED" onclick=copypasta(` + Menu[item].copypasta + `)>` + ${item} + `</button></td>${tr}`;
+			console.log( `<td><button id="${item}-SELECTED" name="${item}-SELECTED" onclick=copypasta(` + Menu[item].copypasta + `)>` + ${item} + `</button></td>${tr}`);
 /*			buffer += `<td><input type="checkbox" id="${item}-SELECTED" name="${item}-SELECTED" value="${item}-SELECTED" ${checked}/>` +
 				`<label for="${item}-SELECTED">${Menu[item].emoji} ${item}</label></td>${tr}`;
 				*/
