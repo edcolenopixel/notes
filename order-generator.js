@@ -448,16 +448,16 @@ function toggleCombos() {
 		}
 		
 		
-		let buffer = `<table border="0"><tr><td colspan="${Settings.COMBO_TABLE_WIDTH}"><center><i> Combo Scene CopyPastas </i></center></td></tr><tr>`;
-		let count = 0;
+		buffer += `<table border="0"><tr><td colspan="${Settings.COMBO_TABLE_WIDTH}"><center><i> Combo Scene CopyPastas </i></center></td></tr><tr>`;
+		let count2 = 0;
 		Object.keys(Menu).forEach(item => {
 			if (Menu[item].header || !Menu[item].emoji) return;
 			let checked = (isSelected(item) ? "checked" : "");
 			let tr = '';
-			count++;
+			count2++;
 			if (count == Settings.COMBO_TABLE_WIDTH) {
 				tr = `</tr><tr>`;
-				count = 0;
+				count2 = 0;
 			}
 			buffer += `<td><center><button class="btn" type="checkbox" id="${item}-SELECTED" name="${item}-SELECTED" onclick="copypasta('`+ Menu[item].copypasta+ `')" value="${item}-SELECTED"/>` +
 				`${Menu[item].emoji} ${item}</button></center></td>${tr}`;
