@@ -502,9 +502,9 @@ function toggleCombos() {
 
 function copypasta(item) {
 	var copyText = document.getElementById("copypasta");
-// 	item = item.replace('"', '\"');
+	item = item.replace('`', '"');
 	copyText.value = item;
-// 	console.log(copyText.value);
+	console.log(copyText.value);
  	navigator.clipboard.writeText(item);
 	//alert(`Copied!`);
 }
