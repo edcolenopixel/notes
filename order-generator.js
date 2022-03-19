@@ -237,8 +237,8 @@ const Signs = {
 	"Refuse Service": {
 		copypasta:  '~y~~h~❗ATTENTION❗~n~~r~~h~ WE HAVE THE RIGHT TO REFUSE SERVICE TO ANYONE'
 	},
-	"Dont Do Murder": {
-		copypasta:  '<font size="45"><b> DON’T DO MURDER😈🔪 EAT A BURGER 🍔🍟'
+	"Don't Do Murder": {
+		copypasta:  '<font size=\"45\"><b> DON’T DO MURDER😈🔪 EAT A BURGER 🍔🍟'
 	},/*
 	"Private Property": {
 		copypasta:  '<font size="35"> ~r~<u>PRIVATE PROPERTY</u>~n~</font> ~o~DO NOT TOW VEHICLES HERE!'
@@ -502,9 +502,9 @@ function toggleCombos() {
 
 function copypasta(item) {
 	var copyText = document.getElementById("copypasta");
-	item = item.replace('"', '\"');
+// 	item = item.replace('"', '\"');
 	copyText.value = item;
-	console.log(copyText.value);
+// 	console.log(copyText.value);
  	navigator.clipboard.writeText(item);
 	//alert(`Copied!`);
 }
