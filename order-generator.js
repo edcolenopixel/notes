@@ -25,7 +25,7 @@ const Menu = {
 		price: 250,
 		emoji: '🍔',
 		noDiscount: true,
-		items: ["Murder Meal", "Heartstopper". "Fries", "Soda"],
+		items: ["Murder Meal", "Heartstopper", "Fries", "Soda"],
 		copypasta: '~o~ ~h~🍔MurderMeal🍔~n~ ~b~1 Mystery Burger, 1 Side, 1 Drink ~w~|~g~ $250',
 	},
 	"Jackpot Meal": {
