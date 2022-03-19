@@ -439,14 +439,27 @@ function toggleCombos() {
 				tr = `</tr><tr>`;
 				count = 0;
 			}
-			buffer += `<td><center><button class="btn" type="checkbox" id="${item}-SELECTED" name="${item}-SELECTED" onclick="copypasta('`+ Menu[item].copypasta+ `')" value="${item}-SELECTED"/>` +
-				`${Menu[item].emoji} ${item}</button></center></td>${tr}`;
+			buffer += `<center><td><button class="btn" type="checkbox" id="${item}-SELECTED" name="${item}-SELECTED" onclick="copypasta('`+ Menu[item].copypasta+ `')" value="${item}-SELECTED"/>` +
+				`${Menu[item].emoji} ${item}</button></td></center>${tr}`;
 				
 		});
 		for (let i = count; i < Settings.COMBO_TABLE_WIDTH; i++) {
 			buffer += `<td></td>`;
 		}
-		
+		buffer += `<table border="0"><tr><td colspan="${Settings.COMBO_TABLE_WIDTH}"><center><i> Signs CopyPastas </i></center></td></tr><tr>`;
+		Object.keys(Menu).forEach(item => {
+			if (Menu[item].header || !Menu[item].emoji) return;
+			let checked = (isSelected(item) ? "checked" : "");
+			let tr = '';
+			count++;
+			if (count == Settings.COMBO_TABLE_WIDTH) {
+				tr = `</tr><tr>`;
+				count = 0;
+			}
+			buffer += `<center><td><button class="btn" type="checkbox" id="${item}-SELECTED" name="${item}-SELECTED" onclick="copypasta('`+ Menu[item].copypasta+ `')" value="${item}-SELECTED"/>` +
+				`${Menu[item].emoji} ${item}</button></td></center>${tr}`;
+				
+		});
 		buffer += `<tr><td colspan="${Settings.COMBO_TABLE_WIDTH}"><center>${buttons['save'].html}<br />${buttons['deselect_combos'].html}</center></td></tr>`;
 		buffer += `</table>`;
 
