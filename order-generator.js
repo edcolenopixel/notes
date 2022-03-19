@@ -241,16 +241,16 @@ const Signs = {
 		copypasta:  '<font size=`45`><b> DON’T DO MURDER😈🔪 EAT A BURGER 🍔🍟'
 	},/*
 	"Private Property": {
-		copypasta:  '<font size="35"> ~r~<u>PRIVATE PROPERTY</u>~n~</font> ~o~DO NOT TOW VEHICLES HERE!'
+		copypasta:  '<font size=`35`> ~r~<u>PRIVATE PROPERTY</u>~n~</font> ~o~DO NOT TOW VEHICLES HERE!'
 	},
 	"Drive-Thru Order Here": {
-		copypasta:  '<font size="35">~w~~h~🍔🍟 ORDER HERE🍟 🍔~w~~h~'
+		copypasta:  '<font size=`35`>~w~~h~🍔🍟 ORDER HERE🍟 🍔~w~~h~'
 	},
 	"Drive-Thru Entrance": {
-		copypasta:  '<font size="45"><b>~g~~h~DRIVE THRU ENTRANCE'
+		copypasta:  '<font size=`45`><b>~g~~h~DRIVE THRU ENTRANCE'
 	},
 	"Drive-Thru Entrance": {
-		copypasta:  '<font size="45"><b>~g~~h~DRIVE THRU NOW OPEN'
+		copypasta:  '<font size=`45`><b>~g~~h~DRIVE THRU NOW OPEN'
 	},
 	"Radio": {
 		copypasta:  '~r~BS Radio: ~g~'
@@ -502,7 +502,7 @@ function toggleCombos() {
 
 function copypasta(item) {
 	var copyText = document.getElementById("copypasta");
-	item = item.replace('`', '"');
+	item = item.replaceAll('`', '"');
 	copyText.value = item;
 	console.log(copyText.value);
  	navigator.clipboard.writeText(item);
