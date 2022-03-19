@@ -13,8 +13,7 @@ const Menu = {
 	"Combos": {
 		header: true,
 	},
-	"Murdershake Meal": {
-		fileRenameException: true,
+	"Murdershake Combo": {
 		price: 300,
 		noDiscount: true,
 		emoji: '🍩',
