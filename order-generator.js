@@ -239,7 +239,7 @@ const Signs = {
 	},
 	"Don't Do Murder": {
 		copypasta:  '<font size=`45`><b> DON’T DO MURDER😈🔪 EAT A BURGER 🍔🍟'
-	},/*
+	},
 	"Private Property": {
 		copypasta:  '<font size=`35`> ~r~<u>PRIVATE PROPERTY</u>~n~</font> ~o~DO NOT TOW VEHICLES HERE!'
 	},
@@ -254,7 +254,7 @@ const Signs = {
 	},
 	"Radio": {
 		copypasta:  '~r~BS Radio: ~g~'
-	}*/
+	}
 };
 
 const discounts = {
