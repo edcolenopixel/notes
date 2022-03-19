@@ -484,11 +484,11 @@ function toggleCombos() {
 				tr = `</tr><tr>`;
 				count = 0;
 			}
-			buffer += `<center><td><button class="btn" type="checkbox" id="${item}-SELECTED" name="${item}-SELECTED" onclick="copypasta('`+ Signs[item].copypasta+ `')" value="${item}-SELECTED"/>` +
-				`${item}</button></td></center>${tr}`;
+			buffer += `<td><button class="btn" type="checkbox" id="${item}-SELECTED" name="${item}-SELECTED" onclick="copypasta('`+ Signs[item].copypasta+ `')" value="${item}-SELECTED"/>` +
+				`${item}</button></td>${tr}`;
 				
 		});
-		buffer += `<tr><td colspan="${Settings.COMBO_TABLE_WIDTH}"><center>${buttons['save'].html}<br />${buttons['deselect_combos'].html}</center></td></tr>`;
+		buffer += `<tr><td colspan="${Settings.COMBO_TABLE_WIDTH}"><center>${buttons['save'].html}<br /></center></td></tr>`;
 		buffer += `</table>`;
 
 		document.getElementById('table').innerHTML = buffer;
