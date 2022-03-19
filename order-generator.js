@@ -238,7 +238,7 @@ const Signs = {
 		copypasta:  '~y~~h~❗ATTENTION❗~n~~r~~h~ WE HAVE THE RIGHT TO REFUSE SERVICE TO ANYONE'
 	},
 	"Don't Do Murder": {
-		copypasta:  '<font size=\"45\"><b> DON’T DO MURDER😈🔪 EAT A BURGER 🍔🍟'
+		copypasta:  '<font size=`45`><b> DON’T DO MURDER😈🔪 EAT A BURGER 🍔🍟'
 	},/*
 	"Private Property": {
 		copypasta:  '<font size="35"> ~r~<u>PRIVATE PROPERTY</u>~n~</font> ~o~DO NOT TOW VEHICLES HERE!'
