@@ -227,6 +227,36 @@ const buttons = {
 	}
 };
 
+const Signs = {
+	"Menu Sign": {
+		copypasta:  '~w~~h~🍔🍟 MENU/COMBOS🍟 🍔~w~~h~'
+	},
+	"Remove Mask/Helmet": {
+		copypasta:  '~y~ ~h~❗ATTENTION❗~n~ ~r~ PLEASE REMOVE ALL MASKS/HELMETS/WEAPONS BEFORE ENTERING THE BUILDING~h~'
+	},
+	"Refuse Service": {
+		copypasta:  '~y~~h~❗ATTENTION❗~n~~r~~h~ WE HAVE THE RIGHT TO REFUSE SERVICE TO ANYONE'
+	},
+	"Don't Do Murder": {
+		copypasta:  '<font size="45"><b> DON’T DO MURDER😈🔪 EAT A BURGER 🍔🍟'
+	},
+	"Private Property": {
+		copypasta:  '<font size="35"> ~r~<u>PRIVATE PROPERTY</u>~n~</font> ~o~DO NOT TOW VEHICLES HERE!'
+	},
+	"Drive-Thru Order Here": {
+		copypasta:  '<font size="35">~w~~h~🍔🍟 ORDER HERE🍟 🍔~w~~h~'
+	},
+	"Drive-Thru Entrance": {
+		copypasta:  '<font size="45"><b>~g~~h~DRIVE THRU ENTRANCE'
+	},
+	"Drive-Thru Entrance": {
+		copypasta:  '<font size="45"><b>~g~~h~DRIVE THRU NOW OPEN'
+	},
+	"Radio": {
+		copypasta:  '~r~BS Radio: ~g~'
+	}
+};
+
 const discounts = {
 	
 	"half_off": {
@@ -439,25 +469,24 @@ function toggleCombos() {
 				tr = `</tr><tr>`;
 				count = 0;
 			}
-			buffer += `<center><td><button class="btn" type="checkbox" id="${item}-SELECTED" name="${item}-SELECTED" onclick="copypasta('`+ Menu[item].copypasta+ `')" value="${item}-SELECTED"/>` +
-				`${Menu[item].emoji} ${item}</button></td></center>${tr}`;
+			buffer += `<td><button class="btn" type="checkbox" id="${item}-SELECTED" name="${item}-SELECTED" onclick="copypasta('`+ Menu[item].copypasta+ `')" value="${item}-SELECTED"/>` +
+				`${Menu[item].emoji} ${item}</button></td>${tr}`;
 				
 		});
 		for (let i = count; i < Settings.COMBO_TABLE_WIDTH; i++) {
 			buffer += `<td></td>`;
 		}
 		buffer += `<table border="0"><tr><td colspan="${Settings.COMBO_TABLE_WIDTH}"><center><i> Signs CopyPastas </i></center></td></tr><tr>`;
-		Object.keys(Menu).forEach(item => {
-			if (Menu[item].header || !Menu[item].emoji) return;
-			let checked = (isSelected(item) ? "checked" : "");
+		count = 0;
+		Object.keys(Signs).forEach(item => {
 			let tr = '';
 			count++;
 			if (count == Settings.COMBO_TABLE_WIDTH) {
 				tr = `</tr><tr>`;
 				count = 0;
 			}
-			buffer += `<center><td><button class="btn" type="checkbox" id="${item}-SELECTED" name="${item}-SELECTED" onclick="copypasta('`+ Menu[item].copypasta+ `')" value="${item}-SELECTED"/>` +
-				`${Menu[item].emoji} ${item}</button></td></center>${tr}`;
+			buffer += `<center><td><button class="btn" type="checkbox" id="${item}-SELECTED" name="${item}-SELECTED" onclick="copypasta('`+ Signs[item].copypasta+ `')" value="${item}-SELECTED"/>` +
+				`${item}</button></td></center>${tr}`;
 				
 		});
 		buffer += `<tr><td colspan="${Settings.COMBO_TABLE_WIDTH}"><center>${buttons['save'].html}<br />${buttons['deselect_combos'].html}</center></td></tr>`;
