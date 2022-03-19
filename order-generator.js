@@ -5,7 +5,7 @@ let darkmodeState;
 const Settings = {
 	'MAIN_TABLE_WIDTH': 4,
 	'COMBO_TABLE_WIDTH': 4,
-	'DEFAULT_MAX_CAP': 100,
+	'DEFAULT_MAX_CAP': 10,
 }
 
 const Menu = {
