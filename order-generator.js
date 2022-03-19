@@ -187,7 +187,7 @@ const Menu = {
 	   	lastItem: false,
 	  	items: ["Salad"],
 	},
-	"Deserts(toys are no longer being sold indivdually):": {
+	"Desserts(toys are no longer being sold indivdually):": {
 		header: true,
   	},
 	"Rimjob": {
