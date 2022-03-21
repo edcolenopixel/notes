@@ -256,6 +256,9 @@ const Signs = {
 	},
 	"Employees Only": {
 		copypasta:  '~r~~h~EMPLOYEES ONLY'
+	},
+	"No Mask/Helmet": {
+		copypasta:  '~h~~r~👺NO MASKS OR HELMETS👺'
 	}
 };
 
