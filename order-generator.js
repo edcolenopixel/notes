@@ -230,7 +230,7 @@ const Signs = {
 	"Menu Sign": {
 		copypasta:  '~w~~h~🍔🍟 MENU/COMBOS🍟 🍔~w~~h~'
 	},
-	"Remove Mask/Helmet": {
+	"Remove Mask/Helmet (Door)": {
 		copypasta:  '~y~ ~h~❗ATTENTION❗~n~ ~r~ PLEASE REMOVE ALL MASKS/HELMETS/WEAPONS BEFORE ENTERING THE BUILDING~h~'
 	},
 	"Refuse Service": {
@@ -257,7 +257,7 @@ const Signs = {
 	"Employees Only": {
 		copypasta:  '~r~~h~EMPLOYEES ONLY'
 	},
-	"No Mask/Helmet": {
+	"No Mask/Helmet (Counter)": {
 		copypasta:  '~h~~r~👺NO MASKS OR HELMETS👺'
 	}
 };
