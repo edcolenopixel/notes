@@ -253,7 +253,7 @@ const Signs = {
 	},
 	"Radio": {
 		copypasta:  '~r~BS Radio: ~g~'
-	}
+	},
 	"Employees Only": {
 		copypasta:  '~r~~h~EMPLOYEES ONLY'
 	}
