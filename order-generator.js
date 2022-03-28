@@ -115,6 +115,14 @@ const Menu = {
 		price: 150,
 		items: ["KnuckleSandwich"],
 	},
+	"Chicken Wraps": {
+		price: 150,
+		items: ["Chicken Wraps"],
+	},
+	"Buttermilk Chicken": {
+		price: 150,
+		items: ["Buttermilk Chicken"],
+	},
 	"Bleeder": {
 		price: 100,
 		items: ["Bleeder"],
@@ -208,7 +216,7 @@ const Menu = {
 	},
 };
 const INDIVIDUAL_ITEMS = [
-	"Murder Meal", "Heartstopper", "Money Shot", "KnuckleSandwich", "Torpedo", "Bleeder", "Water", "Meat Free",
+	"Murder Meal", "Heartstopper", "Money Shot", "KnuckleSandwich", "Torpedo", "Bleeder", "Water", "Meat Free", "Chicken Wraps", "Buttermilk Chicken", 
 	"Fries", "Soda", "Rimjob", "Cream Pie", "Milkshake", "Toy", "Bloody Fingers", "Salad", "Orange Juice", "Lemonade", "Lucky Rings", "Mozz sticks", "Copium", "Bacon", "Oatmeal", "Ice Cream"
 ];
 
