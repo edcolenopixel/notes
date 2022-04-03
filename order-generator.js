@@ -158,7 +158,7 @@ const Menu = {
 	 	max: 5,
 	  	noDiscount: false,
 	  	lastItem: false,
-	  	items: ["Orange Juice"],
+	  	items: ["Lemonade"],
   	},
 	"Iced Tea": {
 	  	price: 45,
