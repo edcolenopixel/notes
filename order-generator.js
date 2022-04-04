@@ -279,6 +279,9 @@ const Signs = {
 	},
 	"No Mask/Helmet (Counter)": {
 		copypasta:  '~h~~r~👺NO MASKS OR HELMETS👺'
+	},
+	"Use Other Door": {
+		copypasta:  '~h~ ~g~ NOT AN ENTRANCE/EXIT ~n~ ~r~ PLEASE USE OTHER DOOR'
 	}
 };
 
