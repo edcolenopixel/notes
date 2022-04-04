@@ -282,6 +282,9 @@ const Signs = {
 	},
 	"Use Other Door": {
 		copypasta:  '~h~ ~g~ NOT AN ENTRANCE/EXIT ~n~ ~r~ PLEASE USE OTHER DOOR'
+	},
+	"No Pants Friday": {
+		copypasta:  '~b~ ~h~❗NO PANTS FRIDAY❗'
 	}
 };
 
