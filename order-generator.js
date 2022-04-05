@@ -9,220 +9,76 @@ const Settings = {
 }
 
 const Menu = {
-	// Combo Items:
-	"Combos": {
+	// Meals:
+	"Meals and Combos:": {
 		header: true,
 	},
-	"Murdershake": {
-		price: 300,
-		noDiscount: true,
-		emoji: '🍩',
-		items: ["Murder Meal", "Fries", "Fries", "Rimjob", "Milkshake", "Heartstopper"],
-		copypasta: '~o~ ~h~🍔MurderShake Meal🍩~n~~b~1 Mystery Burger, 2 Sides, 1 Milkshake, 1 Rimjob ~w~|~g~ $300',
+	"Heart Attack Meal": {
+		price: 230,
+		items: ["Dirty Fries", "Yellow Jack Heart Attack", "Lost MC Root Beer"],
 	},
-	"Murder Meal": {
-		fileRenameException: true,
-		price: 250,
-		emoji: '🍔',
-		noDiscount: true,
-		items: ["Murder Meal", "Heartstopper", "Fries", "Soda"],
-		copypasta: '~o~ ~h~🍔MurderMeal🍔~n~ ~b~1 Mystery Burger, 1 Side, 1 Drink ~w~|~g~ $250',
+	"Gimme the 9's": {
+		price: 999,
+		items: ["Dirty Fries", "Dirty Fries", "Yellow Jack Heart Attack", "Yellow Jack Heart Attack", "Mamma's Chicken Wings", "Mamma's Chicken Wings", "Whiskey Tincture", "Whiskey Tincture", "Whiskey Tincture", "Whiskey Tincture", "Sweet Bourbon Tea", "Sweet Bourbon Tea", "Lost MC Root Beer", "Lost MC Root Beer"],
 	},
-	"Jackpot Meal": {
-		fileRenameException: true,
-		price: 700,
-		emoji: '💰',
-		items: ["Money Shot", "Lucky Rings", "Copium"],
-		copypasta: '~o~ ~h~🍔JackPot Meal💰~n~ ~b~1 Money Shot, 1 Lucky Rings, 1 Copium ~w~|~g~ $700',
-	},
-	"Running Man": {
-		price: 250,
-		emoji: '🏃',
-		items: ["Fries", "Fries", "Rimjob", "Rimjob", "Soda"],
-		copypasta: '~y~~h~🏃‍♂️Running Man Combo🏃‍♂️ ~n~~b~2 Fries, 2 Rimjobs, 1 Soda ~w~|~g~ $250',
-	},
-	"MilkShake and Fries": {
-		price: 200,
-		emoji: '🍟',
-		items: ["Fries", "Fries", "Milkshake", "Milkshake"],
-		copypasta:  '~p~~h~🍟🍨MilkShake and Fries Combo🍨🍟~n~~b~2 Fries & 2 Milkshakes ~w~|~g~ $200',
-	},
-	"Lucky Fisherman": {
-		price: 200,
-		emoji: '⛵',
-		items: ["Lucky Rings", "Lucky Rings", "Soda", "Soda"],
-		copypasta:  '~p~~h~⛵🧅Lucky Fisherman Combo🧅⛵~n~~b~2 Lucky Rings & 2 Drinks ~w~|~g~ $200',
-	},
-	"Salty Seaman": {
-		price: 200,
-		emoji: '🧂',
-		items: ["Fries", "Fries", "Soda", "Soda"],
-		copypasta:  '~p~~h~⛵🧂Salty Seaman Combo🧂⛵~n~~b~2 Fries & 2 Drinks ~w~|~g~ $200',
-	},
-	"Stretchy De-stress": {
-		price: 200,
-		emoji: '🧀',
-		items: ["Mozz sticks","Mozz sticks","Mozz sticks","Mozz sticks"],
-		copypasta:  '~y~ ~h~ 🧀Stretchy De-stress🧠 ~n~~b~ 4 Mozzarella Sticks ~w~|~g~ $200 ~r~LIMITED',
-	},
-	"Sweet Tooth": {
-		price: 162,
-		emoji: '🦷',
-		items: ["Milkshake", "Milkshake", "Cream Pie", "Cream Pie"],
-		copypasta:  '~g~~h~🦷🍬Sweet Tooth Combo🍬🦷~n~~b~2 Milkshakes & 2 Cream Pies ~w~|~g~ $162',
-	},
-	"Sugar Rush": {
-		price: 123,
-		emoji: '🍬',
-		items: ["Soda", "Cream Pie", "Rimjob"],
-		copypasta:  '💨🍬Sugar Rush Combo💨🍬~n~~b~1 Soda, 1 Cream Pie, 1 Rimjob ~w~|~g~ $123',
-	},
-	"Morning Glory": {
-		price: 150,
-		emoji: '☀️',
-		items: ["Oatmeal", "Bacon", "Milkshake"],
-		copypasta:  '~g~~h~ 🌄 Morning Glory Combo 🌄~n~~b~1 Oatmeal, 1 Bacon, 1 OJ ~w~|~g~ $150 ~r~LIMITED',
-	},
-	// Burger Meals:
-	"Burger Meals:": {
-		header: true,
-	},
-	"Heartstopper Meal": {
-		price: 175,
-		items: ["Heartstopper", "Fries", "Soda"],
-	},
-	"Money Shot Meal": {
-		price: 575,
-		items: ["Money Shot", "Fries", "Soda"],
-	},
-	"Bleeder Meal": {
-		price: 200,
-		items: ["Bleeder", "Fries", "Soda"],
+	"Hungryman": {
+		price: 540,
+		items: ["Dirty Fries", "Dirty Fries", "Lost MC Root Beer", "Lost MC Root Beer", "Yellow Jack Heart Attack", "Yellow Jack Heart Attack", "Yellow Jack Heart Attack"],
 	},
 	// Individual Items:
-	"Burgers and Mains:": {
+	"Food": {
 		header: true,
 	},
-	"Heartstopper": {
-		price: 75,
-		items: ["Heartstopper"],
+	"Dirty Fries": {
+		price: 80,
+		items: ["Dirty Fries"],
 	},
-	"Money Shot": {
-		price: 500,
-		items: ["Money Shot"],
+	"Yellow Jack Heart Attack": {
+		price: 80,
+		items: ["Yellow Jack Heart Attack"],
 	},
-	"KnuckleSandwich": {
-		price: 150,
-		items: ["KnuckleSandwich"],
+	"Mamma's Chicken Wings": {
+		price: 80,
+		items: ["Yellow Jack Heart Attack"],
 	},
-	"Chicken Wraps": {
-		price: 150,
-		items: ["Chicken Wraps"],
-	},
-	"Buttermilk Chicken": {
-		price: 150,
-		items: ["Buttermilk Chicken"],
-	},
-	"Bleeder": {
-		price: 100,
-		items: ["Bleeder"],
-	},
-	"Oatmeal": {
-		price: 50,
-		items: ["Oatmeal"],
-	},
-	"Drinks:": {
+	"Medkit, Drinks and Cigs": {
 		header: true,
 	},
-	"Soda": {
-		price: 45,
-		items: ["Soda"]
+	"Whiskey Tincture": {
+		price: 70,
+		items: ["Whiskey Tincture"],
 	},
-	"Milkshake": {
-		price: 48,
-		items: ["Milkshake"],
+	"Sweet Bourbon Tea": {
+		price: 80,
+		items: ["Sweet Bourbon Tea"],
 	},
-	"Copium": {
-		price: 100,
-		items: ["Copium"],
+	"Lost MC Root Beer": {
+		price: 70,
+		items: ["Lost MC Root Beer"],
 	},
-	"Orange Juice": {
-	   	price: 45,
-	   	max: 5,
-	   	noDiscount: false,
-	   	lastItem: false,
-	   	items: ["Orange Juice"],
-   	},
-   	"Lemonade": {
-	  	price: 45,
-	 	max: 5,
-	  	noDiscount: false,
-	  	lastItem: false,
-	  	items: ["Lemonade"],
-  	},
-	"Iced Tea": {
-	  	price: 45,
-	 	max: 5,
-	  	items: ["Iced Tea"],
-  	},
-	"Sides:": {
+	"Beer": {
+		price: 60,
+		items: ["Beer"],
+	},
+	"Whiskey": {
+		price: 60,
+		items: ["Whiskey"],
+	},
+	"Vodka": {
+		price: 60,
+		items: ["Vodka"],
+	},
+	"Apparel": {
 		header: true,
-
 	},
-	"Fries": {
-		price: 55,
-		items: ["Fries"],
-	},
-  	"Lucky Rings": {
-	  	price: 100,
-	  	noDiscount: false,
-	  	lastItem: false,
-	  	items: ["Lucky Rings"],
-	},
-  	"Mozz Sticks": {
-	  	price: 55,
-	  	noDiscount: false,
-	  	lastItem: false,
-	  	items: ["Mozz sticks"],
- 	
-	},
-	"Bacon": {
-		price: 50,
-		items: ["Bacon"],
-	},
-	 "Bloody Fingers": {
-		price: 40,
-		max: 5,
-		noDiscount: false,
-		lastItem: false,
-		items: ["Bloody Fingers"],
-	},
-	"Salad": {
-	   	price: 55,
-	   	max: 5,
-	   	noDiscount: false,
-	   	lastItem: false,
-	  	items: ["Salad"],
-	},
-	"Desserts(toys are no longer being sold indivdually):": {
-		header: true,
-  	},
-	"Rimjob": {
-		price: 45,
-		items: ["Rimjob"],
-	},
-	"Cream Pie": {
-		price: 33,
-		items: ["Cream Pie"],
-	},
-	"Ice Cream": {
-		price: 33,
-		items: ["Ice Cream"],
+	"Lost MC Plushie": {
+		price: 70,
+		items: ["Lost MC Plushie"],
 	},
 };
 const INDIVIDUAL_ITEMS = [
-	"Murder Meal", "Heartstopper", "Money Shot", "KnuckleSandwich", "Torpedo", "Bleeder", "Water", "Meat Free", "Chicken Wraps", "Buttermilk Chicken", 
-	"Fries", "Soda", "Rimjob", "Cream Pie", "Milkshake", "Toy", "Bloody Fingers", "Salad", "Orange Juice", "Lemonade", "Lucky Rings", "Iced Tea", "Mozz sticks", "Copium", "Bacon", "Oatmeal", "Ice Cream"
+	"Dirty Fries", "Yellow Jack Heart Attack", "Mamma's Chicken Wings", "Whiskey Tincture", "Sweet Bourbon Tea", "Lost MC Root Beer", "Lost MC Cigarettes",
+	"Lost MC Plushie", "Beer", "Whiskey", "Vodka",
 ];
 
 const buttons = {
@@ -244,51 +100,24 @@ const buttons = {
 };
 
 const Signs = {
-	"Menu Sign": {
-		copypasta:  '~w~~h~🍔🍟 MENU/COMBOS🍟 🍔~w~~h~'
+	"Menu Sign 1": {
+		copypasta:  '🍔~y~ Heart Attack Burger🍔 ~g~$80~n~ 🍗~b~Mamma's Wings🍗~g~$80 🍟~o~Dirty Fries🍟 ~g~$70~n~ ☕~y~Sweet Bourbon Tea☕ ~g~$80~n~ 🍺~o~Root Beer🍺 ~g~$70~n~'
 	},
-	"Remove Mask/Helmet (Door)": {
-		copypasta:  '~y~ ~h~❗ATTENTION❗~n~ ~r~ PLEASE REMOVE ALL MASKS/HELMETS/WEAPONS BEFORE ENTERING THE BUILDING~h~'
+	"Menu Sign 2": {
+		copypasta:  '🚑 ~o~ Whiskey Tincture🚑  ~g~ $50 ~n~ 🚬~y~Cigarettes🚬 ~g~$50 ~n~ ~o~🦅Lost MC Plushie🦅 ~g~ $1,000'
 	},
-	"Refuse Service": {
-		copypasta:  '~y~~h~❗ATTENTION❗~n~~r~~h~ WE HAVE THE RIGHT TO REFUSE SERVICE TO ANYONE'
+	"Gimme the 9's": {
+		copypasta:  '🔐~y~ ~h~Gimme the 9's🔐 ~n~ ~o~ 2 of everything! ~n~ ~g~ $999 ~n~'
 	},
-	"Don't Do Murder": {
-		copypasta:  '<font size=`45`><b> DON’T DO MURDER😈🔪 EAT A BURGER 🍔🍟'
+	"Morning Wood Special": {
+		copypasta:  '😉~y~ ~h~Morning Wood Special😉 ~n~ ~o~13 Eagle Woods ~s~|~g~ $1,000'
 	},
-	"Private Property": {
-		copypasta:  '<font size=`35`> ~r~<u>PRIVATE PROPERTY</u>~n~</font> ~o~DO NOT TOW VEHICLES HERE!'
+	"Hungry Man Combo": {
+		copypasta:  '🍔🍺 ~o~Hungry Man Combo 🍔🍺~n~ ~y~ 3 Heart Attack Burgers, 2 Dirty Fries,~n~ 2  Root Beer ~n~ ~g~ $430'
 	},
-	"Drive-Thru Order Here": {
-		copypasta:  '<font size=`35`>~w~~h~🍔🍟 ORDER HERE🍟 🍔~w~~h~'
+	"Heart Attack Meal": {
+		copypasta:  '💔🍔~o~Heart Attack Meal🍔💔 ~n~ ~y~ 1 Heart Attack Burger, 1 Rootbeer, 1 Dirty Fry ~n~ ~g~$200''
 	},
-	"Drive-Thru Entrance": {
-		copypasta:  '<font size=`45`><b>~g~~h~DRIVE THRU ENTRANCE'
-	},
-	"Drive-Thru Entrance": {
-		copypasta:  '<font size=`45`><b>~g~~h~DRIVE THRU NOW OPEN'
-	},
-	"Radio": {
-		copypasta:  '~r~BS Radio: ~g~'
-	},
-	"Employees Only": {
-		copypasta:  '~r~~h~EMPLOYEES ONLY'
-	},
-	"Email Sign-in": {
-		copypasta:  '~r~~h~Clock into the email'
-	},
-	"No Mask/Helmet (Counter)": {
-		copypasta:  '~h~~r~👺NO MASKS OR HELMETS👺'
-	},
-	"Use Other Door": {
-		copypasta:  '~h~ ~g~ NOT AN ENTRANCE/EXIT ~n~ ~r~ PLEASE USE OTHER DOOR'
-	},
-	"Main Entrance": {
-		copypasta:  '~h~ ~g~ ENTRANCE/EXIT ~n~ ~r~ PLEASE USE THIS DOOR'
-	},
-	"No Pants Friday": {
-		copypasta:  '~b~ ~h~❗NO PANTS FRIDAY❗'
-	}
 };
 
 const discounts = {
